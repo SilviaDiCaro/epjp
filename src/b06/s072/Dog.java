@@ -1,7 +1,12 @@
 package b06.s072;
 
 public class Dog extends Pet {
-    private double speed;
+    @Override
+	public String toString() {
+		return "Dog [speed=" + speed + "]";
+	}
+
+	private double speed;
 
     public Dog(String name) {
         this(name, 0);

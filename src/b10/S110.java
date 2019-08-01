@@ -15,13 +15,13 @@ public class S110 {
 
     private static void printDefaultArrayListCapacity() {
         ArrayList<Integer> al = new ArrayList<>();
-        al.add(1);
+        al.add(1);//arraylist un cui ho messo elemento 1
 
         try {
-            Field field = ArrayList.class.getDeclaredField("elementData");
+            Field field = ArrayList.class.getDeclaredField("elementData");//campo in al dove vengono messi i valori davvero, è privata e invisibile all'utente
             field.setAccessible(true);
             Object[] data = (Object[]) field.get(al);
-            System.out.println("My ArrayList has capacity " + data.length);
+            System.out.println("My ArrayList has capacity " + data.length);//accedo alla lunghezza della element data 
         } catch (NoSuchFieldException | SecurityException | IllegalAccessException e) {
             System.out.println("Couldn't get ArrayList capacity: " + e.getMessage());
         }

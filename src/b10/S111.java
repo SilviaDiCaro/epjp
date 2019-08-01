@@ -3,6 +3,7 @@ package b10;
 public class S111 {
     public static void main(String[] args) {
         Runnable runnable = new Runner();
+        //oppure evitavo la stringa 5 e scrivevo  Thread[] threads = { new Thread(new Runner), new MyThread() }; ma meglio così
 
         Thread[] threads = { new Thread(runnable), new MyThread() };
         for (Thread t : threads) {

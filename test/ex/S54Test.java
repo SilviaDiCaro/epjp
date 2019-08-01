@@ -2,6 +2,7 @@ package ex;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
 
@@ -58,16 +59,24 @@ class S54Test {
 
     @Test
     void voteLowA() {
-        char actual = S54.vote(90.01);
-
-        assertThat(actual, is('A'));
+    	try {
+    		S54.vote(0);
+    		fail ("fail");
+    	} catch (Exception e) {
+    		String expected = "eccezione";
+    		 assertThat(e.getMessage(), is(expected));
+    }
     }
 
     @Test
     void voteTopB() {
-        char actual = S54.vote(90);
-
-        assertThat(actual, is('B'));
+    	try {
+    		S54.vote(0);
+    		fail ("fail");
+    	} catch (Exception e) {
+    		String expected = "eccezione";
+    		 assertThat(e.getMessage(), is(expected));
+        }
     }
 
     @Test

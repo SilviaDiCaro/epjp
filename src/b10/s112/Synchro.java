@@ -21,7 +21,7 @@ public class Synchro {
 
     }
 
-    private Object mutexF = new Object();
+    private Object mutexF = new Object();//mutex: mutualmente esclusivo
     private Object mutexG = new Object();
 
     public synchronized void f() {

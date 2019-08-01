@@ -12,5 +12,15 @@ public class While {
                 condition = false;
             }
         }
-    }
+        
+//      while(array[i] %3 == 0) {
+//      	System.out.println(array[i]);
+//      	i +=1;
+        }
+ 
+
+     
+        	
+    
 }
+

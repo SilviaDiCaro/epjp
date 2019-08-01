@@ -10,7 +10,7 @@ public class S098 {
         System.out.println(q);
 
         if (q.offer(18)) {
-            System.out.println("18 has been added");
+            System.out.println("18 has been added");//printa solo se lo inserisce il 18 (in questo caso non ho limitazioni, quindi lo stamperebbe comunque)
         }
 
         System.out.println("The first element in queue (or throws): " + q.element());

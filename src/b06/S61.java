@@ -6,7 +6,7 @@ public class S61 {
     private String t; // null
 
     public void f() {
-        int i = 42;
+        int i = 42; //se la variablie è primitiva la inizializzazione è diretta
         String s = new String("Hello");
 
         System.out.println(s + i);

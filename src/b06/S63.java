@@ -10,9 +10,9 @@ public class S63 {
         System.out.println(Float.class);
         System.out.println(Double.class);
 
-        @SuppressWarnings("deprecation")
+//        @SuppressWarnings("deprecation") 
 		Integer i = new Integer(1);
-        Integer j = Integer.valueOf(2);
+        Integer j = Integer.valueOf(2); 
         System.out.println(i + j);
 
         int k = j.intValue();
@@ -24,4 +24,7 @@ public class S63 {
         int n = j;
         System.out.println(n);
     }
+    //normalmente usiamo x=3 e non Intereger y=3.java mette a disposizioni classi che gestiscono le collezioni meglio degli array
+    //usiamo i wrapper
+    //posso associare metodi alla classe
 }

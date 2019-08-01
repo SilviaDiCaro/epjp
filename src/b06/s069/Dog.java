@@ -11,5 +11,6 @@ public class Dog extends Mammal {
     @Override
     public String toString() {
         return "Dog [" + tail + ", gestation=" + gestation + "]";
+        //al posto di tail, posso scrivere tail.getSize()
     }
 }

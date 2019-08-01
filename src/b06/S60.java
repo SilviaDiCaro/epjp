@@ -16,3 +16,5 @@ public class S60 {
         return a / 2;
     }
 }
+//i metodi devono essere pubblici
+//protetto o privato: i metodi pubblici che hanno una parte condivisa lo facciamo privato

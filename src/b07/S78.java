@@ -14,6 +14,13 @@ public class S78 {
         System.out.println(LocalDate.of(2019, Month.JUNE, 2));
         System.out.println(LocalDate.of(2019, 6, 2));
         System.out.println(date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)));
+        System.out.println(date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)));
+        System.out.println(date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)));
+        System.out.println(date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT)));
+        
+        
+
+
 
         LocalTime time = LocalTime.now();
         System.out.println(time);

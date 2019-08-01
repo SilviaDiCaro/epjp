@@ -11,5 +11,17 @@ public class For {
 
             System.out.println("End block loop " + i);
         }
-    }
+          String[] array = new String[5]; 
+        for (int i=0; i < array.length; i++) {
+array[i]="";
+        }
+        }
+    
+    {  String[] array = new String[5]; 
+    for (String s : array){
+    	s ="";
+    
+      System.out.println(s.length()); }
+
+}
 }

@@ -37,7 +37,8 @@ class S52Test {
     public void checkEqualsDouble() {
         double expected = .87;
         double actual = .29 * 3;
-        assertEquals(expected, actual, .0001);
+        assertEquals(expected, actual, .0001); //specifico il margine di errore accettabile per me, cioè in questo caso .0001
+        
     }
 
     @Test
@@ -94,13 +95,13 @@ class S52Test {
     public void hamStart() {
         String prefix = "Tom";
         String actual = "Tom Jones";
-        assertThat(actual, startsWith(prefix));
+        assertThat(actual, startsWith(prefix)); //comincia col prefisso
     }
 
     @Test
     public void hamNot() {
         String prefix = "Bob";
         String actual = "Tom Jones";
-        assertThat(actual, not(startsWith(prefix)));
+        assertThat(actual, not(startsWith(prefix))); //non comincia col prefisso
     }
 }

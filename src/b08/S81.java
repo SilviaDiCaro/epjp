@@ -13,7 +13,7 @@ public class S81 {
         File f3 = new File(dir, "hello.txt");
 
         try {
-            File f4 = new File(new URI("file:///C://tmp/hello.txt"));
+            File f4 = new File(new URI("file:///C://tmp/hello.txt")); //URI tira un'eccezione
             System.out.println("Does the file exist? " + f4.exists());
         } catch (URISyntaxException e) {
             e.printStackTrace();

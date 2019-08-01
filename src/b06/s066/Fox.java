@@ -5,4 +5,5 @@ public class Fox implements Barker {
     public String bark() {
         return "yap!";
     }
+ //java crea costruttore di defalut
 }

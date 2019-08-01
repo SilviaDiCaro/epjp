@@ -12,11 +12,11 @@ public class S84 {
         File f = new File("/tmp/hello.txt");
 
         try {
-            PrintWriter pw = new PrintWriter(new FileWriter(f));
+            PrintWriter pw = new PrintWriter(new FileWriter(f, true));
             pw.println("hello");
             pw.flush();
             pw.close();
-        } catch (IOException e) {
+        } catch (IOException e) {//o la gestico col try catch o la tiro indietro fino a che eventualmente non arrivo al main. se anche il main non tira eccezioni, chiude il programma
             e.printStackTrace();
         }
 
