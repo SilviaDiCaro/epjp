@@ -8,6 +8,7 @@ public class Villain extends Person{
 		super(name, energy);
 		this.ShootingPower = ShootingPower;
 	}
+	
 
 	public double shoot () {
 		return ShootingPower;
