@@ -28,8 +28,6 @@ public class ArrayListEx {
 				}
 			}
 			
-			
-			
 		}
 		return result;
 	}

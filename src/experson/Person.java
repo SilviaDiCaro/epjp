@@ -21,10 +21,11 @@ public abstract class Person {
 	}
 	
 	public boolean alive() {
-		if (energy==0)
+	 
 		return false; 
 
 		}
+	
 	
 	@Override
 	public String toString() {

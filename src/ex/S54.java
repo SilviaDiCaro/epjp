@@ -52,7 +52,7 @@ public class S54 {
 		if (value == 2) {
 			return "two";
 		}
-		if (value == 3) {
+		if (value == 3) {  
 			return "three";
 		}
 		if (value == 4) {
@@ -69,7 +69,7 @@ public class S54 {
 		}
 		if (value == 8) {
 			return "eight";
-		}
+		}        
 		if (value == 9) {
 			return "nine";
 		} else {
@@ -160,3 +160,4 @@ public class S54 {
 			
 		
 		  }}
+

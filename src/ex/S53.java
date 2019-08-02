@@ -22,10 +22,10 @@ public class S53 {
 	 * @return distance
 	 */
 	public static double distance(int x0, int y0, int x1, int y1) {
-		return Math.sqrt(Math.pow(x1 - x0, 2) + Math.pow(y1 - y0, 2));
-
-	}
-
+		return Math.sqrt(Math.pow(x1 - x0, 2) + Math.pow(y1 - y0, 2)); 
+		
+	} 
+	
 	/**
 	 * Engine capacity
 	 * 

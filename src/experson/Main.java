@@ -18,18 +18,12 @@ public class Main {
 //	   for (Person persons : person) {
 //	   if (persons instanceof Villain) {
 //		Villain.put(persons.getName());
-//	
-	  
 		 
 	   }
-		 
-		 
-	
+		 	
 //		ArrayList<Person> jail = new ArrayList<Person>();
 //		ArrayList<Person> dead = new ArrayList<Person>();
 		
-		
-	   
 	}
 
 
