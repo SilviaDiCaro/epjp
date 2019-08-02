@@ -1,29 +1,37 @@
 package experson;
 
 public abstract class Person {
-	public String default_name = "Person";
-	public int default_Energy = 100;
+	private String name;
+	private int energy;
 	 
 
 	public Person (String name, int energy) {
-		this.default_name = name;
-		this.default_Energy= energy;
+		this.name = name;
+		this.energy= energy;
 		
 	}
 
 	public String getName () {
-		return getName();
+		return name;
 	
 	}
 	
-	public int getEnergy() {
-	return getEnergy();
-}
+	public int changeEnergy(int delta) {
+	return this.energy+= delta;
+	}
+	
+	public boolean alive() {
+		if (energy==0)
+		return false; 
 
+		}
 	
 	@Override
 	public String toString() {
-		return "Person [default_name=" + default_name + ", default_Energy=" + default_Energy + "]";
+		return "Person [name=" + name + ", energy=" + energy + "]";
 	}
 
-}
+	
+	
+	}
+

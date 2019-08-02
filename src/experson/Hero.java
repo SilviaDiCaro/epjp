@@ -2,13 +2,17 @@ package experson;
 
 public class Hero extends Person {
 	
-	private double Arrest;
-	public Hero (String name, int energy, double arrest) {
+	private int bonus;
+	public Hero (String name, int energy, int bonus) {
 		super(name, energy);
-		this.Arrest = Arrest;
+		this.bonus = bonus;
 
 }
-	public double arrest () {
-	return Arrest;
+	public boolean arrest (Person p) {
+	return true;
 	}
+
 }
+
+
+
