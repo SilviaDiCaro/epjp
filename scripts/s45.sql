@@ -20,7 +20,7 @@ select  months_between('06-AGO-2019', HIRE_DATE)
 from employees;
 
 --Salario mostrato come una serie di asterischi (1 = 1000€)
-select lpad('*',salary/1000, '*')
+select Lpad('*',salary/1000, '*')
 from employees;
 
 select employee_id, nvl2(commission_pct,(to_char(commission_pct)), 'no value')--se il valore è null ritorno l'ultimo, se no il penultimo
