@@ -48,10 +48,13 @@ select department_name
 from departments
 where manager_id is null;
 
- 
+--Nome degli employees e del loro manager
+select e.last_name as employee, m.last_name as manager
+from employees e join employees m
+on (e.manager_id = m.employee_id);
 
-
-
-
-
-
+--Nome degli employees che non sono manager
+select e.last_name as employee, m.last_name as manager
+from employees e left OUTER join employees m on(e.manager_id = m.employee_id)
+where m.manager_id not in e.employee_id
+order by 1;
