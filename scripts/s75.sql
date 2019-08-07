@@ -6,7 +6,7 @@ exception
     when zero_divide then
         dbms_output.put_line('Zero divide!');
 end;
-/
+/--poiché dovrei conoscere tutte le eccezioni, uso il successivo 
 
 begin
     dbms_output.put_line(1 / 0);

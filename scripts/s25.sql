@@ -17,6 +17,6 @@ from countries
 where region_id = 4;
 
 -- JOIN
-select region_name, country_name
+select region_name, department_name
 from regions, countries
 where regions.region_id = countries.region_id;--primary key=foreign key
