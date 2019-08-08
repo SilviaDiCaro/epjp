@@ -19,3 +19,4 @@ end;
 /
 
 --contiene elementi e permette di looppare gli elementi
+--gestisce n righe

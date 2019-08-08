@@ -1,6 +1,6 @@
 set serveroutput on
 
--- a procedure
+-- a procedure: funzione che ritorna void
 
 create or replace procedure get_coder_salary( --crealo se non c'è già, se c'è già eliminalo e crealo . nome della procedura
     p_coder_id in coders.coder_id%type,--nelle tonde i parametri seguendo una modalità un po' diversa. Il nome comincia con p_ come parameter e non con v_ perché non è una variabile locale
@@ -15,7 +15,7 @@ end get_coder_salary;--dopo l'end va messo il nome della procedure
 
 -- run it
 declare
-    v_id coders.coder_id%type := 105;
+    v_id coders.coder_id%type := 105;--stampa il salario di 105
     v_salary coders.salary%type;
 begin
     get_coder_salary(v_id, v_salary);
@@ -29,3 +29,4 @@ end;
 -- just for demonstration
 drop procedure get_coder_salary; --non è obbligatorio
 --chiunque ha gli accessi, può accedere alla procedura
+

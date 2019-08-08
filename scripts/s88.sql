@@ -13,15 +13,42 @@ end;
 /
 
 --Modificare tomorrow() per fargli accettare come parametro un nome da stampare
+create or replace procedure tomorrow 
+is begin dbms_output.put_line(' ');
+end tomorrow;
+/
+
 declare
-name varchar2(10)
-;
+p_name varchar2(10) := 'Silvia';
 begin
-get_coder_salary(v_id, v_salary);
-dbms_output.put_line('Salary is ' || v_salary);
-exception
-when others then
-dbms_output.put_line('Can''t get salary for ' || v_id);
+tomorrow();
+dbms_output.put_line('Name is ' || p_name);
 end;
 /
+
+
+
+create or replace procedure get_coder(
+p_coder_id in coders.coder_id%type,
+p_last_name out coders.last_name%type,
+p_first_name out coders.first_name%type)
+is begin 
+select first_name, last_name
+into p_last_name, p_first_name
+from coders 
+where coder_id=p_coder_id;
+end get_coder;
+/
+
+declare
+v_id coders.coder_id%type := 105;
+v_first_name coders.first_name%type;
+v_last_name coders.last_name%type;
+begin
+get_coder (v_id, v_first_name, v_last_name);
+dbms_output.put_line('Name is ' ||v_id, v_first_name, v_last_name);
+end;
+/
+
+--? Scrivere e invocare la funzione tomorrow() che stampa function day_after(date, after)
 
