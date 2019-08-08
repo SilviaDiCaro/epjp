@@ -23,8 +23,8 @@ begin
     dbms_output.put_line('Salary is ' || v_salary);
 exception
     when others then
-        dbms_output.put_line('Can''t get salary for ' || v_id);
-end;
+        dbms_output.put_line('Can''t get salary for ' || v_id); --metto due apici per inserire l'apostrofo in "Can't"
+    end;
 /
 
 -- just for demonstration
