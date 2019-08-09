@@ -3,6 +3,7 @@ create table books
 (book_id number (7,0) primary key,  
 title varchar2(80),   
 publication_date date);
+
 --Sbaglio a inserire una informazione in books, elimino tutta la tabella col drop table. Riscrivo la tabella in maniera corretta e--> ctrl+invio
 
 drop table books;
@@ -134,5 +135,9 @@ values (2, 1044);
 insert into books_genres
 values (3, 1044);
 
-
- 
+--select join 
+select b.title, g.name
+from books b join books_genres bg 
+on (b.book_id = bg.book_id)
+join genres g
+on (bg.genre_id = g.genre_id );
